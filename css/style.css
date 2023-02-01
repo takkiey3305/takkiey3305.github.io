@@ -1,5 +1,33 @@
 @charset "utf-8";
 
+
+
+/* .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../img/image1.jpeg);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+} */
+
+
+
+a {
+    text-decoration: none;
+    margin: 0;
+    color: rgb(66, 158, 158);
+}
+
+a:hover {
+    color: red;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,17 +37,44 @@ header {
     border-bottom: 2px solid #aaa;
     text-align: center;
     background-color: rgb(200, 200, 255);
+    padding: 16px;
 }
 
 h1 {
-    font-size: 24px;
-    padding-bottom: 8px;
+    font-size: 32px;
+    padding-bottom: 0px;
     font-weight: normal;
     line-height: 1;
 }
 
+header p {
+    font-style: 8px;
+    line-height: 1;
+    padding: 0 0 8px;
+}
+
 #pi1 {
     border-radius: 50%;
+    position: relative;
+}
+.runnning {
+    margin: 0;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: 16px;
+    left: calc( ( 100% - 160px) / 2 );
+    border-radius: 50%;
+    border-top: 4px solid #999;
+    border-bottom: 4px solid rgb(200, 200, 255);
+    border-left: 4px solid rgb(200, 200, 255);
+    border-right: 4px solid rgb(200, 200, 255);
+    animation: spin 800ms infinite linear;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 main {
