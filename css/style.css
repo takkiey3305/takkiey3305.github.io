@@ -34,10 +34,11 @@ body {
 }
 
 header {
+    height: 320px;
     border-bottom: 2px solid #aaa;
-    text-align: center;
     background-color: rgb(200, 200, 255);
-    padding: 16px;
+    padding: 64px 16px 16px;
+    text-align: center;
 }
 
 h1 {
@@ -55,34 +56,39 @@ header p {
 
 #pi1 {
     border-radius: 50%;
-    position: relative;
-}
+    top: 64px;
+    left: calc( ( 100% - 160px) / 2 );}
+
+
 .runnning {
     margin: 0;
     width: 152px;
     height: 152px;
     position: absolute;
-    top: 16px;
+    top: 64px;
     left: calc( ( 100% - 160px) / 2 );
     border-radius: 50%;
+    border: 4px solid rgb(200, 200, 255);
     border-top: 4px solid #999;
-    border-bottom: 4px solid rgb(200, 200, 255);
+    /* border-bottom: 4px solid rgb(200, 200, 255);
     border-left: 4px solid rgb(200, 200, 255);
-    border-right: 4px solid rgb(200, 200, 255);
-    animation: spin 800ms infinite linear;
-}
+    border-right: 4px solid rgb(200, 200, 255); */
+    animation: spin 2023ms infinite forwards;}
 @keyframes spin {
     100% {
         transform: rotate(360deg);
-    }
-}
+    }}
+
 
 main {
     background-color: rgb(230, 230, 255);
     padding: 32px;
 }
 
-div {
+.menu {
+    margin-left: auto;
+}
+main.div {
     margin-left: 64px;
 }
 
